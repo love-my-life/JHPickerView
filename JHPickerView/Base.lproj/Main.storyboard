@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JHPickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMm-G5-XIC">
+                                <rect key="frame" x="104" y="36" width="112" height="30"/>
+                                <state key="normal" title="show one Picker"/>
+                                <connections>
+                                    <action selector="onePickerBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nU1-es-LV6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPP-vt-9Sy">
+                                <rect key="frame" x="102" y="116" width="116" height="30"/>
+                                <state key="normal" title="show area Picker"/>
+                                <connections>
+                                    <action selector="areaPickerBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7q-ds-KOs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Riw-ky-v3L">
+                                <rect key="frame" x="101.5" y="76" width="117" height="30"/>
+                                <state key="normal" title="show date Picker"/>
+                                <connections>
+                                    <action selector="datePickerBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ys4-a5-s9y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Riw-ky-v3L" firstAttribute="centerX" secondItem="DMm-G5-XIC" secondAttribute="centerX" id="3dq-iN-tGJ"/>
+                            <constraint firstItem="DMm-G5-XIC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ReD-12-XyR"/>
+                            <constraint firstItem="FPP-vt-9Sy" firstAttribute="top" secondItem="Riw-ky-v3L" secondAttribute="bottom" constant="10" id="WPn-wj-kgS"/>
+                            <constraint firstItem="FPP-vt-9Sy" firstAttribute="centerX" secondItem="DMm-G5-XIC" secondAttribute="centerX" id="Zra-TU-HS7"/>
+                            <constraint firstItem="DMm-G5-XIC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="h2o-OD-49a"/>
+                            <constraint firstItem="Riw-ky-v3L" firstAttribute="top" secondItem="DMm-G5-XIC" secondAttribute="bottom" constant="10" id="vmo-Gv-SvZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="231"/>
+        </scene>
+    </scenes>
+</document>
